@@ -98,9 +98,9 @@ MonoBehaviour:
   uiBounds:
     serializedVersion: 2
     x: 771
-    y: 79
-    width: 3495
-    height: 2067
+    y: 21
+    width: 3520
+    height: 2151
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6319,7 +6319,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: 
+      m_SerializableObject: '{"obj":{"fileID":4711208715938537054,"guid":"6d591d0c612ec44dc85ad1bbab9489c4","type":3}}'
     m_Space: -1
   m_Property:
     name: mesh

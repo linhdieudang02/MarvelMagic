@@ -99,8 +99,8 @@ MonoBehaviour:
     collapsed: 0
   uiBounds:
     serializedVersion: 2
-    x: 605
-    y: -1751
+    x: 604
+    y: -1750
     width: 3520
     height: 2150
 --- !u!114 &114350483966674976
