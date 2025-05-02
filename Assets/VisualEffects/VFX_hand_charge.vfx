@@ -76,10 +76,10 @@ MonoBehaviour:
   - title: Base Loop
     position:
       serializedVersion: 2
-      x: 3790.264
-      y: 238.59616
+      x: 3791
+      y: 240
       width: 500
-      height: 1292
+      height: 1356
     contents:
     - model: {fileID: 8926484042661614716}
       id: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
     x: 771
     y: 21
     width: 3520
-    height: 2151
+    height: 2150
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5466,7 +5466,7 @@ MonoBehaviour:
   m_Children:
   - {fileID: 8926484042661614718}
   - {fileID: 8926484042661614722}
-  m_UIPosition: {x: 3815.264, y: 297.59616}
+  m_UIPosition: {x: 3816, y: 298}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -5741,7 +5741,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children:
   - {fileID: 8926484042661614740}
-  m_UIPosition: {x: 3828.264, y: 728.5961}
+  m_UIPosition: {x: 3828, y: 728}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -6205,7 +6205,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 3828.264, y: 1024.5962}
+  m_UIPosition: {x: 3828, y: 1042}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -6241,7 +6241,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children:
   - {fileID: 8926484042661614751}
-  m_UIPosition: {x: 3841.264, y: 1174.5962}
+  m_UIPosition: {x: 3842, y: 1192}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
