@@ -1274,7 +1274,10 @@ VisualEffect:
     m_Gradient:
       m_Array: []
     m_NamedObject:
-      m_Array: []
+      m_Array:
+      - m_Value: {fileID: 1045830686}
+        m_Name: HandMeshRenderer
+        m_Overridden: 1
     m_Bool:
       m_Array: []
 --- !u!114 &354145329
@@ -1811,8 +1814,10 @@ GameObject:
   - component: {fileID: 586036898}
   - component: {fileID: 586036897}
   - component: {fileID: 586036896}
-  - component: {fileID: 586036895}
   - component: {fileID: 586036894}
+  - component: {fileID: 586036904}
+  - component: {fileID: 586036903}
+  - component: {fileID: 586036905}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1859,23 +1864,9 @@ MonoBehaviour:
     _pinkyRequirement: 1
     _unselectMode: 0
   _movementProvider: {fileID: 0}
-  _handAligment: 1
-  _handGrabPoses: []
---- !u!114 &586036895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586036893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _pointable: {fileID: 586036898}
-  _rigidbody: {fileID: 586036896}
-  _scaleMassWithSize: 1
+  _handAligment: 0
+  _handGrabPoses:
+  - {fileID: 0}
 --- !u!54 &586036896
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1925,7 +1916,7 @@ MonoBehaviour:
   _useClosestPointAsGrabSource: 0
   _releaseDistance: 0
   _resetGrabOnGrabsUpdated: 1
-  _physicsGrabbable: {fileID: 586036895}
+  _physicsGrabbable: {fileID: 0}
 --- !u!114 &586036898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2031,12 +2022,85 @@ Transform:
   m_GameObject: {fileID: 586036893}
   serializedVersion: 2
   m_LocalRotation: {x: 0.016207512, y: 0.021731807, z: -0.0051293727, w: 0.99961936}
-  m_LocalPosition: {x: 3.9880438, y: -3.0089724, z: -4.0757933}
+  m_LocalPosition: {x: -0.008408502, y: 1.0499926, z: 0.29}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 1.87, y: 2.482, z: -0.547}
+--- !u!114 &586036903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586036893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 586036898}
+  _rigidbody: {fileID: 586036896}
+  _physicsGrabbable: {fileID: 0}
+  _resetGrabOnGrabsUpdated: 1
+  _slippiness: 0
+  _supportedGrabTypes: 3
+  _pinchGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 0
+    _pinkyRequirement: 0
+    _unselectMode: 0
+  _palmGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 2
+    _middleRequirement: 2
+    _ringRequirement: 2
+    _pinkyRequirement: 1
+    _unselectMode: 0
+  _movementProvider: {fileID: 0}
+  _handAligment: 1
+  _handGrabPoses: []
+--- !u!114 &586036904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586036893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07525681efbca7a4e9643ab3a592ada7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 586036898}
+  _rigidbody: {fileID: 586036896}
+  _grabSource: {fileID: 0}
+  _resetGrabOnGrabsUpdated: 1
+  _physicsGrabbable: {fileID: 0}
+  _movementProvider: {fileID: 0}
+--- !u!114 &586036905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586036893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358cbd2353c662a42bb45a99d6772cc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &612710437
 GameObject:
   m_ObjectHideFlags: 0
@@ -2406,6 +2470,8 @@ GameObject:
   - component: {fileID: 767368395}
   - component: {fileID: 767368397}
   - component: {fileID: 767368396}
+  - component: {fileID: 767368399}
+  - component: {fileID: 767368398}
   m_Layer: 0
   m_Name: VFX_hand_idle
   m_TagString: Untagged
@@ -2492,7 +2558,16 @@ VisualEffect:
     m_Vector2f:
       m_Array: []
     m_Vector3f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 5.9381766, y: 184.03946, z: 4.1016955}
+        m_Name: Transform_angles
+        m_Overridden: 1
+      - m_Value: {x: 0.18649063, y: 1.3540043, z: 1.1410477}
+        m_Name: Transform_position
+        m_Overridden: 1
+      - m_Value: {x: 1.0000006, y: 0.99999994, z: 1.0000002}
+        m_Name: Transform_scale
+        m_Overridden: 1
     m_Vector4f:
       m_Array: []
     m_Uint:
@@ -2506,9 +2581,44 @@ VisualEffect:
     m_Gradient:
       m_Array: []
     m_NamedObject:
-      m_Array: []
+      m_Array:
+      - m_Value: {fileID: 1674285442}
+        m_Name: HandMeshRenderer
+        m_Overridden: 1
     m_Bool:
       m_Array: []
+--- !u!114 &767368398
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767368394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Space: 0
+  m_Property:
+    m_Name: Transform
+  Target: {fileID: 123398601}
+--- !u!114 &767368399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767368394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 767368398}
+  m_VisualEffect: {fileID: 767368397}
 --- !u!1 &824918197
 GameObject:
   m_ObjectHideFlags: 0
@@ -2781,19 +2891,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2483171112402191008, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9999619
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2483171112402191008, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0036606991
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2483171112402191008, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0070057176
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2483171112402191008, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.003700436
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2483171112402191008, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2959,6 +3069,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1045830690}
   m_SourcePrefab: {fileID: 100100000, guid: f54012181eacade4ea242c65f804720f, type: 3}
+--- !u!137 &1045830686 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8907808974102868868, guid: f54012181eacade4ea242c65f804720f, type: 3}
+  m_PrefabInstance: {fileID: 1045830685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1045830687 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2483171112401766342, guid: f54012181eacade4ea242c65f804720f, type: 3}
@@ -4263,6 +4378,11 @@ Transform:
   - {fileID: 250627740}
   m_Father: {fileID: 99002182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &1674285442 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2168138016974986308, guid: f54012181eacade4ea242c65f804720f, type: 3}
+  m_PrefabInstance: {fileID: 1045830685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1691137068
 GameObject:
   m_ObjectHideFlags: 0
