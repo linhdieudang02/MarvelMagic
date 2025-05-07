@@ -11,7 +11,7 @@ public class HandMagicController : MonoBehaviour
 
     void Start()
     {
-        // Ensure idle effect is active at start
+        // check idle effect is active at start
         if (vfxIdle != null) vfxIdle.gameObject.SetActive(true);
         if (vfxCharged != null) vfxCharged.gameObject.SetActive(false);
     }
